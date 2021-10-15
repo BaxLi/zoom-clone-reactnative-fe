@@ -13,10 +13,10 @@ function Contacts() {
   return (
     <View style={styles.container}>
       {contactsMenuButtons.map((contact, index) => (
-        <View style={styles.row}>
+        <View key={index} style={styles.row}>
           {/*Image of contact */}
           {contact.type === "starred" ? (
-            <View key={index} style={styles.starredImage}>
+            <View style={styles.starredImage}>
               <AntDesign name='star' size={30} color='#efefef' />
             </View>
           ) : (
