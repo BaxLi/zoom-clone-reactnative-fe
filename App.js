@@ -1,16 +1,9 @@
-import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet } from "react-native";
-import { View, Text } from "react-native";
-import Home from "./screens/home";
+import Navigation from "./Navigation";
 
 export default function App() {
-  return (
-    <View>
-      <Home />
-      <Text> TEXT</Text>
-    </View>
-  );
+  return <Navigation />;
 }
 
 const styles = StyleSheet.create({

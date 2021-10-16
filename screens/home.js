@@ -11,13 +11,13 @@ import SearchBar from "../components/SearchBar";
 import MenuButtons from "../components/MenuButtons";
 import Contacts from "../components/Contacts";
 
-function Home() {
+function Home({ navigation }) {
   return (
     <View style={styles.container}>
       <SafeAreaView style={styles.AndroidSafeArea}>
         <Header />
         <SearchBar />
-        <MenuButtons />
+        <MenuButtons navigation={navigation} />
         <Contacts />
       </SafeAreaView>
     </View>
